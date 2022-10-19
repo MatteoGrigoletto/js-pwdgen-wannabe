@@ -1,0 +1,95 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(246, 240, 240);
+    font-family: 'Exo', sans-serif;
+    background-image: url(../img/forest.jpg);
+}
+img{
+    width: 100%;
+    display: block;
+}
+/* credit card */
+
+.credit-card{
+    width: 350px;
+    height: 200px;
+    background-color: black;
+    padding: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    border: 3px solid white;
+}
+.animation{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid white;
+    padding: 0px 20px;
+}
+.card-margin{
+    width: 100%;
+    height: 100%;
+}
+
+/* class password */
+.card-contain{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: aliceblue;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* animation */
+
+.credit-card{
+    animation: animation-y 1s alternate infinite ;
+}
+@keyframes animation-y{
+    0%{
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        top: 49%;
+        left:50%;  
+    }
+}
+.animation::before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    box-shadow:  0px 0px 50px 10px rgba(231, 230, 225, 0.1) inset;
+    top: 1rem;
+    left: 50%;
+}
+.card-margin::before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    box-shadow:  50px 50px 50px 50px rgba(255, 255, 253, 0.1) inset;
+    top: -200%;
+    left: 45%;
+}
+.left-middle::before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    box-shadow:  50px 50px 50px 50px rgba(255, 255, 255, 0.1) inset;
+    top: -150%;
+    left: -220%;
+}
