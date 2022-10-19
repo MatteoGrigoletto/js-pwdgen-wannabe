@@ -82,14 +82,14 @@ img{
     top: -200%;
     left: 45%;
 }
-.left-middle::before{
+.card-margin::after{
     content: '';
     display: block;
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     border-radius: 100%;
     box-shadow:  50px 50px 50px 50px rgba(255, 255, 255, 0.1) inset;
-    top: -150%;
-    left: -220%;
+    top: -50%;
+    left: -30%;
 }

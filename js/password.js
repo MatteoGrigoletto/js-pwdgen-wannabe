@@ -7,7 +7,9 @@ const cognome= prompt('inserisci cognome utente');
 let colore= prompt('inserisci colore utente');
 //genero password
 const userPassword = `La tua password e':
- ${nome}${cognome}${colore}76`;
+ ${nome}
+ ${cognome}
+ ${colore}76`;
 //stampo password su file html
 document.getElementById('password').innerHTML = userPassword;
 
